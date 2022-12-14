@@ -7,12 +7,12 @@
   <div class="navbar-collapse collapse" id="navbarsExampleDefault" style="">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/projects">Home <span class="sr-only">(current)</span>
+        <a class="nav-link" href="/projects">Home <span class="sr-only"></span>
         </a>
       </li>
       <% if !user_signed_in? %>
-        <a class="nav-link" href="/users/sign_up">Sign up <span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="/users/sign_in">Log in <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/users/sign_up">Sign up <span class="sr-only"></span></a>
+        <a class="nav-link" href="/users/sign_in">Log in <span class="sr-only"></span></a>
       <% else %>
         
         Logged in as <strong> <%= current_user.email %></strong>.
